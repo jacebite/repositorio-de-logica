@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="jaceb"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-06-06 07:01:46 "/>
+        <attribute name="created" value="amFjZWI7REVTS1RPUC1DNDA2M0dJOzIwMjItMDYtMDY7IjA2OjUzOjAyICI7MjY4OQ=="/>
+        <attribute name="edited" value="amFjZWI7REVTS1RPUC1DNDA2M0dJOzIwMjItMDYtMDY7IjA3OjAxOjQ2ICI7MTsyNzk5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1, nota2, nota3, nota4, media" type="Real" array="False" size=""/>
+            <input variable="nota1"/>
+            <input variable="nota2"/>
+            <input variable="nota3"/>
+            <input variable="nota4"/>
+            <assign variable="media" expression="(nota1+nota2+nota3+nota4)/4"/>
+            <output expression="media" newline="True"/>
+            <if expression="media&gt;=7">
+                <then>
+                    <output expression="&quot;N&#195;O FEZ MAIS QUE SUA OBRIGA&#199;&#195;O&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;VOCE &#201; UM BOSTA&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
